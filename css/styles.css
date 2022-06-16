@@ -1,0 +1,167 @@
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+}
+
+.flex {
+  display: flex;
+  height: 100vh;
+  background-color: var(--pale-blue);
+  background-image: url("../images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+}
+.box {
+  background-color: var(--very-pale-blue);
+  border-radius: 1rem 1rem 1rem 1rem;
+  text-align: center;
+  width: 312px;
+  margin: auto;
+}
+.content {
+  padding: 0 1.4rem;
+}
+.main-img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+h3 {
+  font-weight: 900;
+  font-size: 1.35rem;
+  color: var(--dark-blue);
+  margin: 2rem 0 0.99rem;
+}
+.main-p {
+  font-size: 0.9rem;
+  padding: 0 10px;
+  line-height: 1.7;
+  margin-bottom: 1.4rem;
+}
+p {
+  color: var(--desaturated-blue);
+}
+.price-section {
+  display: flex;
+  border-radius: 1rem;
+  padding: 14px 14px;
+  background-color: hsla(225, 100%, 94%, 0.3);
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.45rem;
+}
+.price-section img {
+  margin-right: 1.2rem;
+}
+.price-section div {
+  display: flex;
+}
+.price-section p {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  padding: 4px 0;
+}
+.price-section a {
+  color: var(--bright-blue);
+  font-size: 0.75rem;
+}
+
+span {
+  font-weight: 900;
+  color: var(--dark-blue);
+}
+
+button {
+  display: block;
+  width: 100%;
+  background-color: var(--bright-blue);
+  color: var(--very-pale-blue);
+  border: none;
+  border-radius: 1rem;
+  padding: 13px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+a {
+  font-weight: 700;
+  color: var(--desaturated-blue);
+}
+
+.main-a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-bottom: 32px;
+}
+
+
+@media (min-width:385px) {
+  .flex {
+    background-image: url("../images/pattern-background-desktop.svg");
+  }
+}
+
+
+@media (min-width: 700px) {
+  .box {
+    width: 340px;
+  }
+  h3 {
+    margin: 2.26rem 0 0.8rem;
+  }
+  
+  .main-p {
+    font-size: 0.8rem;
+    line-height: 1.6;
+    margin-bottom: 0.8rem;
+  }
+  .price-section {
+    padding: 13px 14px;
+    margin: 0 14px;
+    margin-bottom: 1.6rem;
+  }
+  .price-section img{
+    width: 27%;
+    height: 27%;
+    align-self: center;
+  }
+  .price-section p {
+    font-size: 0.8rem;
+  }
+  span {
+    font-size: 0.8rem;
+  }
+  .buttonHolder {
+    padding: 0 14px;
+  }
+  button {
+    padding: 10.4px;
+    margin-bottom: 19px;
+    font-size: 0.7rem;
+    border-radius: 0.5rem;
+  }
+  .main-a {
+    font-size: 0.7rem;
+    margin-bottom: 32px;
+  }
+}
+
+@media (hover:hover) {
+  .main-a:hover{
+    color: var(--dark-blue);
+  }
+  button:hover{
+    opacity: 60%;
+  }
+  .price-section a:hover{
+    opacity: 80%;
+    text-decoration: none;
+  }
+}
